@@ -324,7 +324,6 @@
 				UBOOT_VBOOT_BOOTM_COMMAND
 	#elif defined(CONFIG_EMMC_SUPPORT)
 		#define CONFIG_EMMCBOOTCOMMAND \
-				SET_BOOTARGS \
 				"mmc dev 0 ;"		\
 				"mmc read ${uImage_addr} ${BOOT_PART_OFFSET} ${BOOT_PART_SIZE} ;"		\
 				UBOOT_VBOOT_BOOTM_COMMAND
